@@ -1,3 +1,13 @@
+# Pong workshop lesson plan
+
+## Repo layout
+
+the [exampleFiles](exampleFiles) folder contains some example projects in Scratch:
+
+* `pong-ai3.sb2` is a completed Pong game with an AI opponent and scorekeeping.
+* `pong-recreated1.sb2` is my WIP re-implementation of the above I am making while writing this lesson plan. I am trying to make it simpler where possible.
+* `pong2.sb2` is a completed 2-player Pong game that was the basis for `pong-ai3.sb2`.
+
 # Let's play Pong!
 
 * [History of Pong](https://nerdist.com/atari-pong-45th-anniversary-history-video-game/)
