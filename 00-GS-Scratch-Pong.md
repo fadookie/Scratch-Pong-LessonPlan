@@ -13,23 +13,23 @@
 	* Suggestion: `Things` -> `Paddle`
 		* Any sprite works
 * Give it the name `Player`
-* Set rotation style to ![](00.png)
+* Set rotation style to ![](./00.png)
 * Rotate until it is facing up (How many degrees is that?) 
 
-![](01.png)
+![](./01.png)
 
 ## Making it move
 * `Scripts` -> `Motion`
 * How do we get the paddle to move up?
 	* Drag blocks to scripts panel and click them to see what they do
 
-![](02.png)
+![](./02.png)
 
 ## Making it respond to keys
 * `Scripts` -> `Events`
 * How do we make a block run when a key is pressed?
 
-![](03.png)
+![](./03.png)
 
 * Remember to save often!
 
@@ -51,7 +51,7 @@
 ## Making it move
 * `Scripts` -> `Motion`
 	* `move x steps`
-* How do we make the ball move forward when the game starts (when ![](greenflag.png) is pressed?)
+* How do we make the ball move forward when the game starts (when ![](./greenflag.png) is pressed?)
 	* `Events` -> `when (flag) clicked` 
 * How do we make it keep moving after the game starts?
 	* Try to talk it through in English.
@@ -63,7 +63,7 @@
 	* `Motion` -> `go to (x, y)`
 * Save!
 
-![](04.png)
+![](./04.png)
 
 * What do you think will happen when the ball hits the paddle?
 	* Did it bounce? Why not?
@@ -73,7 +73,7 @@
 * `Control` -> `if/else`
 * `Sensing` -> `touching <sprite>`
 * We need to make the ball turn around and move away:
-![](05.png)
+![](./05.png)
 * Now what happens when the ball touches the `Player`? Why?
 	* We need to check if it's touching the `Player` also.
 	* `Operators` -> `or`
@@ -90,7 +90,7 @@
 * How can we make it negative for moving it down?
 	* `operators`-> `*` -> `-1`
 
-![](06.png)
+![](./06.png)
 
 ## Detecting when the ball goes out of bounds
 
@@ -105,4 +105,4 @@
 	* Say "Player 1 wins" or "Player 2 wins"
 
 (This is from a more complex version - don't need to build this all right now:)
-![](07.png)
+![](./07.png)
