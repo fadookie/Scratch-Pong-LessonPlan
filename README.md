@@ -4,8 +4,12 @@
 
 the [exampleFiles](exampleFiles) folder contains some example projects in Scratch:
 
-* `pong-ai3.sb2` is a completed Pong game with an AI opponent and scorekeeping.
-* `pong-recreated1.sb2` is my WIP re-implementation of the above I am making while writing this lesson plan. I am trying to make it simpler where possible.
+### Main Files
+* `pong-recreated-2p.sb2` Is an implementation of 2-player pong following this lesson plan.
+* `pong-recreated-ai.sb2` Is an implementation of AI pong following this lesson plan.
+
+### Other Files
+* `pong-ai3.sb2` is a more elaborate completed Pong game with an AI opponent and scorekeeping.
 * `pong2.sb2` is a completed 2-player Pong game that was the basis for `pong-ai3.sb2`.
 
 # Let's play Pong!
@@ -145,10 +149,16 @@ Scratch lets us make our own blocks out of other blocks!
 * Call it "Start next round"
 * Move the blocks that have to do with starting the game into it (`go to x,y`, `point in direction`)
 
+![](images/08.png)
+
 ## Making the start more fair
 * How does pong decide how to serve the ball?
 * `Operators` -> `pick random`
 	* try some different values. I like 45 to 135
+* Is the ball supposed to always be served to player 2?
+* Need to decide based on coin flip (50/50 chance)
+
+![](images/09.png)
 
 # Making an AI opponent!
 * AI = Artificial Intelligence
@@ -156,8 +166,9 @@ Scratch lets us make our own blocks out of other blocks!
 	* Sometimes in video games, AI is even allowed to cheat! (Just don't tell the players. 🤫)
 * How would you design a perfect opponent?
 	* Try to say in English what it should do to intercept the ball.
+	* Replace player 2 with an AI.
 	* `set y position to <y position of ball>`
-	![](images/08.png)
+	![](images/10.png)
 * Is it cheating? How?
 
 ## Making the AI play by the rules
@@ -167,7 +178,7 @@ Make it so it can only move how the player can.
 * How do you control the paddle?
 * We can use some of the same techniques we used to detect if the ball went out of bounds.
 
-![](images/09.png)
+![](images/11.png)
 
 ## Making difficulty settings
 * Can you think of some ways we can make it so the AI's skill is adjustable?
@@ -179,8 +190,9 @@ Make it so it can only move how the player can.
 	* Make it a slider
 * Adjusting speed
 	* Replace `Paddle speed` with `<Paddle speed> / <AI skill>`
+![](images/12.png)
 * Introduce error
-![](images/10.png)
+![](images/13.png)
 * Update position less frequently
 	* Use a timer to update a variable every so often & check against that instead of current position
 	
